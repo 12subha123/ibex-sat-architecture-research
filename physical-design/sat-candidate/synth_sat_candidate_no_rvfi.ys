@@ -1,0 +1,11 @@
+read_liberty -lib /nix/store/46hd905vghwsxg42pwmmh81byjlxwpl2-openroad-nangate45-PDKv1.3_v2010_12.Apache.CCL/lib/NangateOpenCellLibrary_typical.lib
+read_verilog /mnt/d/ibex-research/build-candidates/sat_candidate/ibex_top_sat_candidate_synth_sv2v.v
+chparam -set BranchTargetALU 1 -set WritebackStage 1 -set SecureIbex 1 -set RV32B 2 -set RV32M 2 -set RegFile 0 ibex_top
+hierarchy -check -top ibex_top
+synth -top ibex_top -flatten -noabc
+dfflibmap -liberty /nix/store/46hd905vghwsxg42pwmmh81byjlxwpl2-openroad-nangate45-PDKv1.3_v2010_12.Apache.CCL/lib/NangateOpenCellLibrary_typical.lib
+abc -liberty /nix/store/46hd905vghwsxg42pwmmh81byjlxwpl2-openroad-nangate45-PDKv1.3_v2010_12.Apache.CCL/lib/NangateOpenCellLibrary_typical.lib
+clean
+check
+tee -o /mnt/d/ibex-research/build-candidates/sat_candidate/sat_candidate_stat.txt stat -liberty /nix/store/46hd905vghwsxg42pwmmh81byjlxwpl2-openroad-nangate45-PDKv1.3_v2010_12.Apache.CCL/lib/NangateOpenCellLibrary_typical.lib
+write_verilog -noattr /mnt/d/ibex-research/build-candidates/sat_candidate/ibex_top_sat_candidate_mapped.v

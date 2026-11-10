@@ -1,0 +1,29 @@
+{
+  "model": "ArchitectureCNF",
+  "scope": "six-field provisional model",
+  "solver": "Python DPLL",
+  "selection": "SAT witness with BranchTargetALU and WritebackStage preferred true",
+  "assignment": {
+    "branchTargetALU": true,
+    "writebackStage": true,
+    "secureIbex": true,
+    "rv32bHigh": true,
+    "rv32bLow": false,
+    "rv32mHigh": true,
+    "rv32mLow": false,
+    "regFile": false
+  },
+  "cnf_clauses": [
+    [
+      -4,
+      -5
+    ],
+    [
+      -3,
+      6,
+      7
+    ]
+  ],
+  "status": "SAT",
+  "rtl_mapping_status": "Lean Boolean-to-architecture correspondence proved; selected assignment SAT theorem proved; RTL functional verification pending"
+}

@@ -1,0 +1,10 @@
+read_liberty -lib /nix/store/46hd905vghwsxg42pwmmh81byjlxwpl2-openroad-nangate45-PDKv1.3_v2010_12.Apache.CCL/lib/NangateOpenCellLibrary_typical.lib
+read_verilog build-candidates/sat_candidate/ibex_top_sat_candidate_mapped.v
+hierarchy -check -top ibex_top
+proc
+opt
+techmap -map build-candidates/sat_candidate/map_clock_latch.v
+opt
+check
+stat -liberty /nix/store/46hd905vghwsxg42pwmmh81byjlxwpl2-openroad-nangate45-PDKv1.3_v2010_12.Apache.CCL/lib/NangateOpenCellLibrary_typical.lib
+write_verilog -noattr build-candidates/sat_candidate/ibex_top_sat_candidate_latchmapped.v
