@@ -105,19 +105,21 @@ The latch-mapped synthesis netlist was placed using OpenROAD.
 |---|---:|
 | Placed standard-cell area | 68,798.8053 |
 | Placed components | 35,908 |
-| Nets | 42,070 |
+| Nets | 42,068 |
 | Detailed-placement failures | 0 |
 | HPWL before legalization | 565,793.6 |
 | HPWL after legalization | 593,217.5 |
-| Die dimensions | 827.57 x 827.57 um |
+| Die dimensions | 413.785 x 413.785 um |
 
-Placement completed without detailed-placement failures. These are
-placement-stage measurements, not routed results.
+Placement completed without detailed-placement failures. Detailed routing
+also completed, with zero final router DRC violations. Routed wirelength was
+813,605 um and the router reported 328,487 vias.
 
-**Important limitations:** routing has not been completed. Wire RC was not
-configured for meaningful parasitic timing estimation, and the placement
-flow emitted a warning about the zero default wire-capacitance corner.
-No sign-off timing, congestion, or signal-metal-area result is claimed.
+**Important limitations:** congestion was not measured or reported. Global-route
+timing is exploratory only; final extracted timing and sign-off timing are
+not established. The placement flow emitted a warning about zero default
+wire capacitance. Signal-metal area is available only as a nominal-width
+wirelength estimate, not an exact geometric area.
 
 ## Research status
 
@@ -127,15 +129,16 @@ No sign-off timing, congestion, or signal-metal-area result is claimed.
 | 2. Eliminate duplicate representations | Canonicalization developed; full coverage pending |
 | 3. Develop exact-count-guided exploration | Provisional exact count only |
 | 4. Select promising candidates | One SAT witness selected |
-| 5. Elaborate and functionally verify candidates | Pending |
+| 5. Elaborate and functionally verify candidates | Lint/elaboration passed with warnings; functional signature smoke test passed |
 | 6. Synthesize and compare area and timing | One candidate synthesized |
-| 7. Placement and routing | Placement completed; routing pending |
-| 8. Compare physical metrics | Partial placement metrics available |
+| 7. Placement and routing | Placement and detailed routing completed; zero final router DRC violations |
+| 8. Compare physical metrics | Wirelength and vias measured; signal-metal area estimated; congestion and final extracted timing unavailable |
 | 9. Identify and validate the best practical architecture | Pending |
 
-This repository is an intermediate research artifact. It does not claim
-functional RTL verification, exhaustive architecture exploration, a
-completed routing flow, or a globally optimal architecture.
+This repository is an intermediate research artifact. The functional test
+is a signature smoke test, not a full RISC-V compliance suite or formal
+equivalence proof. It does not claim exhaustive architecture exploration
+or a globally optimal architecture.
 
 The physical-design scripts reference development-machine tool and PDK
 paths. The PDK and external tool installations are not included.

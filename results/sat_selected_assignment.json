@@ -25,5 +25,5 @@
     ]
   ],
   "status": "SAT",
-  "rtl_mapping_status": "Lean Boolean-to-architecture correspondence proved; selected assignment SAT theorem proved; RTL functional verification pending"
+  "rtl_mapping_status": "Lean Boolean-to-architecture correspondence proved; selected assignment SAT theorem proved; IBEX0165 RTL functional signature smoke test passed (signature 0x13579bdf, 26 cycles); full compliance suite and formal equivalence not established"
 }
