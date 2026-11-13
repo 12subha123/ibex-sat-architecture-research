@@ -152,7 +152,7 @@ wirelength estimate, not an exact geometric area.
 | 6. Synthesize and compare area and timing | One selected configuration synthesized; controlled multi-candidate PPA comparison incomplete |
 | 7. Placement and routing | Placement and detailed routing completed; zero final router DRC violations |
 | 8. Compare physical metrics | Routed wirelength and vias measured; signal-metal area estimated; congestion and final extracted/sign-off timing unavailable |
-| 9. Identify and validate the best practical architecture | Pending |
+| 9. Identify and validate the best practical architecture | IBEX0165 selected and validated as the best-supported practical implementation candidate in this workflow; comparative and global optimality not established |
 
 This repository is an intermediate research artifact. The SAT-selected
 configuration passed lint/elaboration with warnings (three `UNOPTFLAT`
@@ -179,6 +179,59 @@ exploration or a globally optimal architecture.
 
 The physical-design scripts reference development-machine tool and PDK
 paths. The PDK and external tool installations are not included.
+
+## Step 9 — Practical architecture selection and validation
+
+### Selected architecture
+
+The selected practical implementation candidate is **IBEX0165**, with:
+
+- BranchTargetALU = 1
+- WritebackStage = 1
+- SecureIbex = 1
+- RV32B = RV32BFull
+- RV32M = RV32MFast
+- RegFile = RegFileFF
+
+IBEX0165 is the best-supported practical candidate produced by this
+workflow: it has a SAT-selected configuration, targeted functional-test
+evidence, and a completed placement and detailed-routing implementation.
+It is the only candidate in this record with this complete combination
+of evidence. This is a selection based on implementation and validation
+coverage, not proof of PPA superiority over other architectures.
+
+### Validation evidence
+
+- Verilator lint/elaboration log: 3 `UNOPTFLAT` warnings and 0 reported
+  errors. The warnings are retained; this is not a warning-free result.
+- Five targeted functional simulations passed, including the custom
+  signature test (`0x13579bdf`, 26 cycles), RV32I, RV32M, extended RV32I,
+  and firmware smoke tests. These do not constitute full compliance or
+  formal equivalence verification.
+- Placement completed with 0 detailed-placement failures.
+- Placed standard-cell area: 68,798.8053 µm².
+- Detailed routing completed with 813,605 µm routed wirelength,
+  328,487 vias, and 0 final router DRC violations.
+- Estimated signal-metal area: 68,206.51 µm², based on nominal routing
+  widths and parsed wirelength; this is not an exact geometric area.
+- Available global-route timing estimates: main setup +1.23 ns,
+  gated-clock setup +4.70 ns, and recovery -0.26 ns (VIOLATED).
+
+### Decision and limitations
+
+IBEX0165 is therefore identified as the best-supported practical
+architecture implemented and evaluated in this study. The recovery
+violation remains unresolved. Congestion was not measured, and final
+extracted/sign-off timing was not established. The available Candidate A
+comparison is not controlled, and the separate FF-versus-latch synthesis
+experiment is not evidence of an improvement attributable to the
+SAT-selected architecture.
+
+The study does not establish that IBEX0165 is better in PPA than every
+alternative, does not exhaustively explore the complete legal RTL
+architecture space, and does not prove global optimality. The result is
+a validated implementation candidate with documented limitations,
+not a globally optimal architecture or a sign-off-ready design.
 
 ## Repository contents
 
