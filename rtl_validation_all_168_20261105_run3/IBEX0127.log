@@ -1,0 +1,114 @@
+%Warning-UNUSEDSIGNAL: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:16:33: Signal is not used: 'clk_i'
+                                                                                : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   16 |   input  logic                  clk_i,
+      |                                 ^~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.048
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:17:33: Signal is not used: 'rst_ni'
+                                                                                : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   17 |   input  logic                  rst_ni,
+      |                                 ^~~~~~
+%Warning-UNUSEDSIGNAL: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:30:33: Signal is not used: 'multdiv_operator_i'
+                                                                                : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   30 |   input  ibex_pkg::md_op_e      multdiv_operator_i,
+      |                                 ^~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:31:33: Signal is not used: 'mult_en_i'
+                                                                                : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   31 |   input  logic                  mult_en_i,              
+      |                                 ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:32:33: Signal is not used: 'div_en_i'
+                                                                                : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   32 |   input  logic                  div_en_i,               
+      |                                 ^~~~~~~~
+%Warning-UNUSEDSIGNAL: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:33:33: Signal is not used: 'mult_sel_i'
+                                                                                : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   33 |   input  logic                  mult_sel_i,             
+      |                                 ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:34:33: Signal is not used: 'div_sel_i'
+                                                                                : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   34 |   input  logic                  div_sel_i,              
+      |                                 ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:35:33: Signal is not used: 'multdiv_signed_mode_i'
+                                                                                : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   35 |   input  logic  [1:0]           multdiv_signed_mode_i,
+      |                                 ^~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:36:33: Signal is not used: 'multdiv_operand_a_i'
+                                                                                : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   36 |   input  logic [31:0]           multdiv_operand_a_i,
+      |                                 ^~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:37:33: Signal is not used: 'multdiv_operand_b_i'
+                                                                                : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   37 |   input  logic [31:0]           multdiv_operand_b_i,
+      |                                 ^~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:38:33: Signal is not used: 'multdiv_ready_id_i'
+                                                                                : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   38 |   input  logic                  multdiv_ready_id_i,
+      |                                 ^~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:39:33: Signal is not used: 'data_ind_timing_i'
+                                                                                : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   39 |   input  logic                  data_ind_timing_i,
+      |                                 ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:44:33: Signal is not used: 'imd_val_q_i'
+                                                                                : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   44 |   input  logic [33:0]           imd_val_q_i[2],
+      |                                 ^~~~~~~~~~~
+%Warning-UNDRIVEN: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:57:28: Signal is not driven: 'multdiv_result'
+                                                                            : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   57 |   logic [31:0] alu_result, multdiv_result;
+      |                            ^~~~~~~~~~~~~~
+                   ... For warning description see https://verilator.org/warn/UNDRIVEN?v=5.048
+                   ... Use "/* verilator lint_off UNDRIVEN */" and lint_on around source to disable this message.
+%Warning-UNDRIVEN: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:59:16: Signal is not driven: 'multdiv_alu_operand_b'
+                                                                            : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   59 |   logic [32:0] multdiv_alu_operand_b, multdiv_alu_operand_a;
+      |                ^~~~~~~~~~~~~~~~~~~~~
+%Warning-UNDRIVEN: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:59:39: Signal is not driven: 'multdiv_alu_operand_a'
+                                                                            : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   59 |   logic [32:0] multdiv_alu_operand_b, multdiv_alu_operand_a;
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:60:16: Signal is not used: 'alu_adder_result_ext'
+                                                                                : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   60 |   logic [33:0] alu_adder_result_ext;
+      |                ^~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:61:32: Signal is not used: 'alu_is_equal_result'
+                                                                                : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   61 |   logic        alu_cmp_result, alu_is_equal_result;
+      |                                ^~~~~~~~~~~~~~~~~~~
+%Warning-UNDRIVEN: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:62:16: Signal is not driven: 'multdiv_valid'
+                                                                            : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   62 |   logic        multdiv_valid;
+      |                ^~~~~~~~~~~~~
+%Warning-UNDRIVEN: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:64:16: Signal is not driven: 'multdiv_imd_val_d'
+                                                                            : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   64 |   logic [33:0] multdiv_imd_val_d[2];
+      |                ^~~~~~~~~~~~~~~~~
+%Warning-UNDRIVEN: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:65:16: Signal is not driven: 'multdiv_imd_val_we'
+                                                                            : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+   65 |   logic [ 1:0] multdiv_imd_val_we;
+      |                ^~~~~~~~~~~~~~~~~~
+%Warning-UNOPTFLAT: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_id_stage.sv:259:16: Signal unoptimizable: Circular combinational logic: 'ibex_top.u_ibex_core.id_stage_i.controller_run'
+  259 |   logic        controller_run;
+      |                ^~~~~~~~~~~~~~
+                    ... For warning description see https://verilator.org/warn/UNOPTFLAT?v=5.048
+                    ... Use "/* verilator lint_off UNOPTFLAT */" and lint_on around source to disable this message.
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_id_stage.sv:259:16:      Example path: ibex_top.u_ibex_core.id_stage_i.controller_run
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_id_stage.sv:874:3:      Example path: ALWAYS
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_id_stage.sv:262:16:      Example path: ibex_top.u_ibex_core.id_stage_i.stall_multdiv
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_id_stage.sv:974:19:      Example path: ASSIGNW
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_id_stage.sv:265:16:      Example path: ibex_top.u_ibex_core.id_stage_i.stall_id
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_id_stage.sv:982:21:      Example path: ASSIGNW
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_id_stage.sv:258:16:      Example path: ibex_top.u_ibex_core.id_stage_i.instr_done
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_id_stage.sv:1121:28:      Example path: ASSIGNW
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:410:16:      Example path: ibex_top.u_ibex_core.instr_id_done
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_id_stage.sv:744:22:      Example path: ASSIGNW
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:332:16:      Example path: ibex_top.u_ibex_core.csr_op_en
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:294:22:      Example path: ASSIGNW
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:169:9:      Example path: ibex_top.u_ibex_core.id_stage_i.controller_i.special_req
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:544:3:      Example path: ALWAYS
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:165:9:      Example path: ibex_top.u_ibex_core.id_stage_i.controller_i.halt_if
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:1025:33:      Example path: ASSIGNW
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:1025:33:      Example path: __VdfgRegularize_h6e95ff9d_0_12
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:544:3:      Example path: ALWAYS
+- V e r i l a t i o n   R e p o r t: Verilator 5.048 2026-04-26 rev v5.048
+- Verilator: Built from 75.288 MB sources in 144 modules, into 1.421 MB in 4 C++ files needing 0.000 MB
+- Verilator: Walltime 2.931 s (elab=0.182, cvt=0.339, bld=0.000); cpu 0.859 s on 1 threads; allocated 82.113 MB

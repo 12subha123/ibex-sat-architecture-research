@@ -110,26 +110,28 @@ It does not establish foundry sign-off, congestion-free routing, final
 extracted timing closure, or global optimality across the Ibex architecture
 space.
 
-## 6. Functional RTL Smoke Test
+## 6. Functional RTL Tests
 
-A custom RV32 assembly signature test was executed on the IBEX0165
-Verilator simulation build.
+Five targeted assembly/firmware simulations were executed on the selected
+IBEX0165 Verilator build. Each log records the expected signature and a
+software-requested Verilog `$finish`.
 
-| Check | Result |
-|---|---|
-| Simulator execution | Completed |
-| Executed cycles | 26 |
-| Expected signature | 0x13579bdf |
-| Observed signature | 0x13579bdf |
-| Software termination | Successful |
+| Test | Observed signature | Executed cycles | Simulation termination |
+|---|---:|---:|---|
+| Custom IBEX0165 signature | `0x13579bdf` | 26 | `$finish` |
+| RV32I | `0x0000002a` | 220 | `$finish` |
+| RV32M | `0x0000002a` | 332 | `$finish` |
+| Extended RV32I | `0x0000002a` | 239 | `$finish` |
+| Firmware smoke | `0x0000002a` | 21 | `$finish` |
 
-The test wrote the expected signature to RAM, exposed its address range
-through the simulation test utility, and terminated through the software
-test mechanism.
+The custom test uses its own signature location; the other four runs
+report the `0x0000002a` signature. The cycle counts and signatures above
+are transcribed from the corresponding preserved simulation logs.
 
-**Scope limitation:** This is a functional signature smoke test. It is
-not a full RISC-V compliance-suite result and does not establish formal
-equivalence between the selected RTL and a reference implementation.
+**Scope limitation:** These are targeted functional simulations, not a
+claim that the complete official RISC-V compliance suite was run. They
+do not establish formal equivalence between the selected RTL and a
+reference implementation.
 
 ## 7. Evidence and Reproducibility
 

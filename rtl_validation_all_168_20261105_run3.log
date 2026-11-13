@@ -1,0 +1,356 @@
+warning: Git tree '/mnt/d/ibex' is dirty
+Using saved setting for 'extra-substituters = https://nix-cache.lowrisc.org/public/' from ~/.local/share/nix/trusted-settings.json.
+Using saved setting for 'extra-trusted-public-keys = nix-cache.lowrisc.org-public-1:O6JLD0yXzaJDPiQW1meVu32JIDViuaPtGDfjlOopU7o=' from ~/.local/share/nix/trusted-settings.json.
+warning: ignoring untrusted substituter 'https://nix-cache.lowrisc.org/public/', you are not a trusted user.
+Run `man nix.conf` for more information on the `substituters` configuration option.
+warning: ignoring the client-specified setting 'trusted-public-keys', because it is a restricted setting and you are not a trusted user
+warning: ignoring untrusted substituter 'https://nix-cache.lowrisc.org/public/', you are not a trusted user.
+Run `man nix.conf` for more information on the `substituters` configuration option.
+warning: ignoring the client-specified setting 'trusted-public-keys', because it is a restricted setting and you are not a trusted user
+warning: ignoring untrusted substituter 'https://nix-cache.lowrisc.org/public/', you are not a trusted user.
+Run `man nix.conf` for more information on the `substituters` configuration option.
+warning: ignoring the client-specified setting 'trusted-public-keys', because it is a restricted setting and you are not a trusted user
+PASS: 168 candidates validated
+PASS: six domains, fixed assumptions and C001
+[1/168] IBEX0001
+  PASS_WITH_WARNINGS: exit=0, warnings=21, errors=0
+[2/168] IBEX0002
+  PASS_WITH_WARNINGS: exit=0, warnings=22, errors=0
+[3/168] IBEX0003
+  PASS_CLEAN: exit=0, warnings=0, errors=0
+[4/168] IBEX0004
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[5/168] IBEX0005
+  PASS_CLEAN: exit=0, warnings=0, errors=0
+[6/168] IBEX0006
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[7/168] IBEX0007
+  PASS_CLEAN: exit=0, warnings=0, errors=0
+[8/168] IBEX0008
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[9/168] IBEX0009
+  PASS_WITH_WARNINGS: exit=0, warnings=21, errors=0
+[10/168] IBEX0010
+  PASS_WITH_WARNINGS: exit=0, warnings=22, errors=0
+[11/168] IBEX0011
+  PASS_CLEAN: exit=0, warnings=0, errors=0
+[12/168] IBEX0012
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[13/168] IBEX0013
+  PASS_CLEAN: exit=0, warnings=0, errors=0
+[14/168] IBEX0014
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[15/168] IBEX0015
+  PASS_CLEAN: exit=0, warnings=0, errors=0
+[16/168] IBEX0016
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[17/168] IBEX0017
+  PASS_WITH_WARNINGS: exit=0, warnings=21, errors=0
+[18/168] IBEX0018
+  PASS_WITH_WARNINGS: exit=0, warnings=22, errors=0
+[19/168] IBEX0019
+  PASS_CLEAN: exit=0, warnings=0, errors=0
+[20/168] IBEX0020
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[21/168] IBEX0021
+  PASS_CLEAN: exit=0, warnings=0, errors=0
+[22/168] IBEX0022
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[23/168] IBEX0023
+  PASS_CLEAN: exit=0, warnings=0, errors=0
+[24/168] IBEX0024
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[25/168] IBEX0025
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[26/168] IBEX0026
+  PASS_WITH_WARNINGS: exit=0, warnings=2, errors=0
+[27/168] IBEX0027
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[28/168] IBEX0028
+  PASS_WITH_WARNINGS: exit=0, warnings=2, errors=0
+[29/168] IBEX0029
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[30/168] IBEX0030
+  PASS_WITH_WARNINGS: exit=0, warnings=2, errors=0
+[31/168] IBEX0031
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[32/168] IBEX0032
+  PASS_WITH_WARNINGS: exit=0, warnings=2, errors=0
+[33/168] IBEX0033
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[34/168] IBEX0034
+  PASS_WITH_WARNINGS: exit=0, warnings=2, errors=0
+[35/168] IBEX0035
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[36/168] IBEX0036
+  PASS_WITH_WARNINGS: exit=0, warnings=2, errors=0
+[37/168] IBEX0037
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[38/168] IBEX0038
+  PASS_WITH_WARNINGS: exit=0, warnings=2, errors=0
+[39/168] IBEX0039
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[40/168] IBEX0040
+  PASS_WITH_WARNINGS: exit=0, warnings=2, errors=0
+[41/168] IBEX0041
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[42/168] IBEX0042
+  PASS_WITH_WARNINGS: exit=0, warnings=2, errors=0
+[43/168] IBEX0043
+  PASS_WITH_WARNINGS: exit=0, warnings=22, errors=0
+[44/168] IBEX0044
+  PASS_WITH_WARNINGS: exit=0, warnings=22, errors=0
+[45/168] IBEX0045
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[46/168] IBEX0046
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[47/168] IBEX0047
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[48/168] IBEX0048
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[49/168] IBEX0049
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[50/168] IBEX0050
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[51/168] IBEX0051
+  PASS_WITH_WARNINGS: exit=0, warnings=22, errors=0
+[52/168] IBEX0052
+  PASS_WITH_WARNINGS: exit=0, warnings=22, errors=0
+[53/168] IBEX0053
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[54/168] IBEX0054
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[55/168] IBEX0055
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[56/168] IBEX0056
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[57/168] IBEX0057
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[58/168] IBEX0058
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[59/168] IBEX0059
+  PASS_WITH_WARNINGS: exit=0, warnings=22, errors=0
+[60/168] IBEX0060
+  PASS_WITH_WARNINGS: exit=0, warnings=22, errors=0
+[61/168] IBEX0061
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[62/168] IBEX0062
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[63/168] IBEX0063
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[64/168] IBEX0064
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[65/168] IBEX0065
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[66/168] IBEX0066
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[67/168] IBEX0067
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[68/168] IBEX0068
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[69/168] IBEX0069
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[70/168] IBEX0070
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[71/168] IBEX0071
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[72/168] IBEX0072
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[73/168] IBEX0073
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[74/168] IBEX0074
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[75/168] IBEX0075
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[76/168] IBEX0076
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[77/168] IBEX0077
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[78/168] IBEX0078
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[79/168] IBEX0079
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[80/168] IBEX0080
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[81/168] IBEX0081
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[82/168] IBEX0082
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[83/168] IBEX0083
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[84/168] IBEX0084
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[85/168] IBEX0085
+  PASS_WITH_WARNINGS: exit=0, warnings=21, errors=0
+[86/168] IBEX0086
+  PASS_WITH_WARNINGS: exit=0, warnings=22, errors=0
+[87/168] IBEX0087
+  PASS_CLEAN: exit=0, warnings=0, errors=0
+[88/168] IBEX0088
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[89/168] IBEX0089
+  PASS_CLEAN: exit=0, warnings=0, errors=0
+[90/168] IBEX0090
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[91/168] IBEX0091
+  PASS_CLEAN: exit=0, warnings=0, errors=0
+[92/168] IBEX0092
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[93/168] IBEX0093
+  PASS_WITH_WARNINGS: exit=0, warnings=21, errors=0
+[94/168] IBEX0094
+  PASS_WITH_WARNINGS: exit=0, warnings=22, errors=0
+[95/168] IBEX0095
+  PASS_CLEAN: exit=0, warnings=0, errors=0
+[96/168] IBEX0096
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[97/168] IBEX0097
+  PASS_CLEAN: exit=0, warnings=0, errors=0
+[98/168] IBEX0098
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[99/168] IBEX0099
+  PASS_CLEAN: exit=0, warnings=0, errors=0
+[100/168] IBEX0100
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[101/168] IBEX0101
+  PASS_WITH_WARNINGS: exit=0, warnings=21, errors=0
+[102/168] IBEX0102
+  PASS_WITH_WARNINGS: exit=0, warnings=22, errors=0
+[103/168] IBEX0103
+  PASS_CLEAN: exit=0, warnings=0, errors=0
+[104/168] IBEX0104
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[105/168] IBEX0105
+  PASS_CLEAN: exit=0, warnings=0, errors=0
+[106/168] IBEX0106
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[107/168] IBEX0107
+  PASS_CLEAN: exit=0, warnings=0, errors=0
+[108/168] IBEX0108
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[109/168] IBEX0109
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[110/168] IBEX0110
+  PASS_WITH_WARNINGS: exit=0, warnings=2, errors=0
+[111/168] IBEX0111
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[112/168] IBEX0112
+  PASS_WITH_WARNINGS: exit=0, warnings=2, errors=0
+[113/168] IBEX0113
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[114/168] IBEX0114
+  PASS_WITH_WARNINGS: exit=0, warnings=2, errors=0
+[115/168] IBEX0115
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[116/168] IBEX0116
+  PASS_WITH_WARNINGS: exit=0, warnings=2, errors=0
+[117/168] IBEX0117
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[118/168] IBEX0118
+  PASS_WITH_WARNINGS: exit=0, warnings=2, errors=0
+[119/168] IBEX0119
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[120/168] IBEX0120
+  PASS_WITH_WARNINGS: exit=0, warnings=2, errors=0
+[121/168] IBEX0121
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[122/168] IBEX0122
+  PASS_WITH_WARNINGS: exit=0, warnings=2, errors=0
+[123/168] IBEX0123
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[124/168] IBEX0124
+  PASS_WITH_WARNINGS: exit=0, warnings=2, errors=0
+[125/168] IBEX0125
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[126/168] IBEX0126
+  PASS_WITH_WARNINGS: exit=0, warnings=2, errors=0
+[127/168] IBEX0127
+  PASS_WITH_WARNINGS: exit=0, warnings=22, errors=0
+[128/168] IBEX0128
+  PASS_WITH_WARNINGS: exit=0, warnings=22, errors=0
+[129/168] IBEX0129
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[130/168] IBEX0130
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[131/168] IBEX0131
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[132/168] IBEX0132
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[133/168] IBEX0133
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[134/168] IBEX0134
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[135/168] IBEX0135
+  PASS_WITH_WARNINGS: exit=0, warnings=22, errors=0
+[136/168] IBEX0136
+  PASS_WITH_WARNINGS: exit=0, warnings=22, errors=0
+[137/168] IBEX0137
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[138/168] IBEX0138
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[139/168] IBEX0139
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[140/168] IBEX0140
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[141/168] IBEX0141
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[142/168] IBEX0142
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[143/168] IBEX0143
+  PASS_WITH_WARNINGS: exit=0, warnings=22, errors=0
+[144/168] IBEX0144
+  PASS_WITH_WARNINGS: exit=0, warnings=22, errors=0
+[145/168] IBEX0145
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[146/168] IBEX0146
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[147/168] IBEX0147
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[148/168] IBEX0148
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[149/168] IBEX0149
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[150/168] IBEX0150
+  PASS_WITH_WARNINGS: exit=0, warnings=1, errors=0
+[151/168] IBEX0151
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[152/168] IBEX0152
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[153/168] IBEX0153
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[154/168] IBEX0154
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[155/168] IBEX0155
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[156/168] IBEX0156
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[157/168] IBEX0157
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[158/168] IBEX0158
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[159/168] IBEX0159
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[160/168] IBEX0160
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[161/168] IBEX0161
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[162/168] IBEX0162
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[163/168] IBEX0163
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[164/168] IBEX0164
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[165/168] IBEX0165
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[166/168] IBEX0166
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[167/168] IBEX0167
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+[168/168] IBEX0168
+  PASS_WITH_WARNINGS: exit=0, warnings=3, errors=0
+
+===== SUMMARY =====
+PASS_CLEAN 18
+PASS_WITH_WARNINGS 150
+FAIL 0
+RESULT DIRECTORY: /mnt/d/ibex-research/rtl_validation_all_168_20261105_run3

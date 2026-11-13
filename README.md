@@ -33,6 +33,13 @@ Its clauses are:
 The provisional CNF has **168 satisfying assignments**. This count applies
 only to this CNF, not the complete RTL-constrained Ibex architecture space.
 
+A separate historical RTL lint/elaboration run on November 5, 2026, contains
+168 unique candidate IDs, with no duplicate IDs: 18 `PASS_CLEAN` and 150
+`PASS_WITH_WARNINGS`, all with zero reported errors. This historical set does
+**not** include the SAT-selected configuration. These results therefore do
+not establish RTL validation of the selected candidate or functional
+correctness of all 168 configurations.
+
 The Python DPLL solver prefers BranchTargetALU and WritebackStage enabled.
 These are selection heuristics, not a PPA optimization proof.
 
@@ -53,6 +60,18 @@ and decodes to the architecture shown above.
 **Candidate A is separate.** `sat/connect_sat_to_ibex.py` generates a
 different baseline configuration. Candidate A is not the SAT-selected
 candidate used for the synthesis and placement measurements.
+
+**Candidate A comparison limitation:** The preserved converted RTL files
+have different `ibex_core` interfaces: Candidate A has 61 ports, while the
+SAT-selected conversion has 105. The 44 additional SAT-side ports are
+RVFI-related outputs. Candidate A's `sat_assignment.json` identifies it
+as a satisfying witness of the six-field provisional CNF, but its SV2V
+logs are empty and the preserved artifacts do not establish its exact RTL
+source revision or conversion source list. Consequently, Candidate A's
+existing physical results are not a controlled baseline for comparative
+PPA claims. A matched-feature synthesis run is exploratory evidence only;
+it does not establish that either RTL implementation is architecturally
+or physically superior.
 
 ## Lean formalization
 
@@ -126,19 +145,37 @@ wirelength estimate, not an exact geometric area.
 | Roadmap step | Current status |
 |---|---|
 | 1. Expand the RTL-constrained architecture model | Partial |
-| 2. Eliminate duplicate representations | Canonicalization developed; full coverage pending |
-| 3. Develop exact-count-guided exploration | Provisional exact count only |
-| 4. Select promising candidates | One SAT witness selected |
-| 5. Elaborate and functionally verify candidates | Lint/elaboration passed with warnings; functional signature smoke test passed |
-| 6. Synthesize and compare area and timing | One candidate synthesized |
+| 2. Eliminate duplicate representations | Canonicalization proved for the modeled representation; full RTL-space coverage pending |
+| 3. Develop exact-count-guided exploration | Provisional count of 168 and theorem-level algorithm-existence bridge; native algorithm execution not demonstrated |
+| 4. Select promising candidates | One satisfying SAT witness selected using heuristics; no PPA-optimality proof |
+| 5. Elaborate and functionally verify candidates | Selected configuration lint/elaboration and five targeted functional simulations passed; warnings and test scope documented |
+| 6. Synthesize and compare area and timing | One selected configuration synthesized; controlled multi-candidate PPA comparison incomplete |
 | 7. Placement and routing | Placement and detailed routing completed; zero final router DRC violations |
-| 8. Compare physical metrics | Wirelength and vias measured; signal-metal area estimated; congestion and final extracted timing unavailable |
+| 8. Compare physical metrics | Routed wirelength and vias measured; signal-metal area estimated; congestion and final extracted/sign-off timing unavailable |
 | 9. Identify and validate the best practical architecture | Pending |
 
-This repository is an intermediate research artifact. The functional test
-is a signature smoke test, not a full RISC-V compliance suite or formal
-equivalence proof. It does not claim exhaustive architecture exploration
-or a globally optimal architecture.
+This repository is an intermediate research artifact. The SAT-selected
+configuration passed lint/elaboration with warnings (three `UNOPTFLAT`
+warnings; zero errors) and five targeted functional simulations:
+
+- Custom functional test: signature `0x13579bdf`, 26 cycles.
+- RV32I test: signature `0x0000002a`, 220 cycles.
+- RV32M test: signature `0x0000002a`, 332 cycles.
+- Extended RV32I test: signature `0x0000002a`, 239 cycles.
+- Firmware smoke test: signature `0x0000002a`, 21 cycles.
+
+Each simulation ended through software-requested `$finish`. These are
+targeted functional tests, not a full RISC-V compliance-suite result or a
+formal equivalence proof. The historical 168-candidate lint/elaboration
+run is a separate dataset and does not include the SAT-selected candidate.
+
+The selected configuration completed placement and detailed routing, with
+zero final detailed-router DRC violations. Its routed wirelength was
+813,605 um and the router reported 328,487 vias. Congestion was not measured,
+and final extracted/sign-off timing was not established. The available
+Candidate A comparison is not controlled, so no candidate is established
+as physically superior. The project does not claim exhaustive architecture
+exploration or a globally optimal architecture.
 
 The physical-design scripts reference development-machine tool and PDK
 paths. The PDK and external tool installations are not included.

@@ -1,0 +1,40 @@
+%Warning-UNOPTFLAT: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_alu.sv:151:9: Signal unoptimizable: Circular combinational logic: 'ibex_top.u_ibex_core.ex_block_i.alu_i.cmp_result'
+                                                                        : ... note: In instance 'ibex_top.u_ibex_core.ex_block_i'
+  151 |   logic cmp_result;
+      |         ^~~~~~~~~~
+                    ... For warning description see https://verilator.org/warn/UNOPTFLAT?v=5.048
+                    ... Use "/* verilator lint_off UNOPTFLAT */" and lint_on around source to disable this message.
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_alu.sv:151:9:      Example path: ibex_top.u_ibex_core.ex_block_i.alu_i.cmp_result
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_id_stage.sv:874:3:      Example path: ALWAYS
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_id_stage.sv:286:27:      Example path: ibex_top.u_ibex_core.id_stage_i.rf_we_raw
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_id_stage.sv:462:21:      Example path: ASSIGNW
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_id_stage.sv:178:37:      Example path: ibex_top.u_ibex_core.id_stage_i.rf_we_id_o
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_wb_stage.sv:307:24:      Example path: ASSIGNW
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:297:16:      Example path: ibex_top.u_ibex_core.rf_we_wb
+                    src/lowrisc_prim_generic_clock_gating_0/rtl/prim_clock_gating.sv:21:3:      Example path: ALWAYS
+                    src/lowrisc_prim_generic_clock_gating_0/rtl/prim_clock_gating.sv:20:9:      Example path: ibex_top.gen_regfile_latch.register_file_i.g_plain_rf.cg_we_global.en_latch
+                    src/lowrisc_prim_generic_clock_gating_0/rtl/prim_clock_gating.sv:26:16:      Example path: ASSIGNW
+                    src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_latch.sv:313:11:      Example path: ibex_top.gen_regfile_latch.register_file_i.g_plain_rf.clk_int
+                    src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_latch.sv:380:7:      Example path: ALWAYS
+                    src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_latch.sv:299:27:      Example path: ibex_top.gen_regfile_latch.register_file_i.g_plain_rf.mem
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_multdiv_fast.sv:412:3:      Example path: ALWAYS
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:59:16:      Example path: ibex_top.u_ibex_core.ex_block_i.multdiv_alu_operand_b
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_alu.sv:99:29:      Example path: ASSIGNW
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv:60:16:      Example path: ibex_top.u_ibex_core.ex_block_i.alu_adder_result_ext
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_alu.sv:163:29:      Example path: ASSIGNW
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_alu.sv:163:29:      Example path: ibex_top.u_ibex_core.id_stage_i.__VdfgRegularize_h6e95ff9d_0_90
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_alu.sv:163:27:      Example path: ASSIGNW
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_alu.sv:151:9:      Example path: ibex_top.u_ibex_core.ex_block_i.alu_i.cmp_result
+%Warning-UNOPTFLAT: src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:169:9: Signal unoptimizable: Circular combinational logic: 'ibex_top.u_ibex_core.id_stage_i.controller_i.special_req'
+                                                                               : ... note: In instance 'ibex_top.u_ibex_core.id_stage_i'
+  169 |   logic special_req;
+      |         ^~~~~~~~~~~
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:169:9:      Example path: ibex_top.u_ibex_core.id_stage_i.controller_i.special_req
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:544:3:      Example path: ALWAYS
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:165:9:      Example path: ibex_top.u_ibex_core.id_stage_i.controller_i.halt_if
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:1025:33:      Example path: ASSIGNW
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:1025:33:      Example path: ibex_top.u_ibex_core.id_stage_i.__VdfgRegularize_h6e95ff9d_0_168
+                    src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:544:3:      Example path: ALWAYS
+- V e r i l a t i o n   R e p o r t: Verilator 5.048 2026-04-26 rev v5.048
+- Verilator: Built from 75.288 MB sources in 144 modules, into 3.432 MB in 15 C++ files needing 0.000 MB
+- Verilator: Walltime 2.795 s (elab=0.225, cvt=0.706, bld=0.000); cpu 1.275 s on 1 threads; allocated 89.742 MB
